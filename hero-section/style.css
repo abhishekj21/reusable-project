@@ -1,15 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,600&display=swap");
 
+.container {
+  margin: 0 auto;
+
+  width: 1200px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 html {
   font-family: "Rubik", sans-serif;
   color: #444;
 }
-
+header {
+  height: 100vh;
+  position: relative;
+  background-size: cover;
+  color: #fff;
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.6),
+      rgba(34, 34, 34, 0.6)
+    ),
+    url(hero.jpg);
+}
 nav {
   font-size: 20px;
   font-weight: 700;
   display: flex;
   justify-content: space-between;
+}
+.header-container {
+  width: 1200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.header-container-child {
+  width: 50%;
 }
 h1 {
   font-size: 52px;
